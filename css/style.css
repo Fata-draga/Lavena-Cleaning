@@ -353,11 +353,16 @@ button {
 }
 
 /* Responsive nav */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .grid-3 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
-
+.side-header .brand-name{
+    font-size: 18px;
+}
+.side-header .brand-tag{
+    font-size: 12px;
+}
     .hero-card {
         padding: 26px;
     }
