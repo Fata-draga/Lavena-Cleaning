@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="520" height="120" viewBox="0 0 520 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="520" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F4C5C"/>
+      <stop offset="1" stop-color="#1F6F8B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon -->
+  <circle cx="62" cy="60" r="38" stroke="url(#g)" stroke-width="8"/>
+  <path d="M62 36 C48 50, 48 66, 62 84 C76 66, 76 50, 62 36Z" fill="url(#g)" opacity="0.9"/>
+  <path d="M62 46 C56 54, 56 64, 62 74 C68 64, 68 54, 62 46Z" fill="#ffffff" opacity="0.65"/>
+
+  <!-- Wordmark -->
+  <text x="120" y="62" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800" fill="#0F172A">
+    Lavena Cleaning
+  </text>
+  <text x="120" y="92" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#475569">
+    Specialist &amp; compliant cleaning
+  </text>
+</svg>
