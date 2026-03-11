@@ -27,3 +27,33 @@ document.addEventListener("submit", async function (e) {
     status.hidden = false;
   }
 });
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    const expanded = navLinks.classList.contains("open");
+    navToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+  });
+}
+
+const revealItems = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.12,
+  },
+);
+
+revealItems.forEach((item) => {
+  revealObserver.observe(item);
+});

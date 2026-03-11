@@ -1,22 +1,283 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="520" height="120" viewBox="0 0 520 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="520" y2="120" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F4C5C"/>
-      <stop offset="1" stop-color="#1F6F8B"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="197.25505mm"
+   height="71.181183mm"
+   viewBox="0 0 197.25505 71.181183"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="Lavena_Cleaning_Logo.png"
+   inkscape:export-xdpi="61.927616"
+   inkscape:export-ydpi="61.927616"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.76167931"
+     inkscape:cx="242.88437"
+     inkscape:cy="250.10526"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="197.25505"
+       height="71.181183"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="470"
+       y="380"
+       width="299"
+       height="175"
+       id="rect21" />
+    <rect
+       x="453"
+       y="369"
+       width="328"
+       height="195"
+       id="rect12" />
+    <linearGradient
+       id="swatch1"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
     </linearGradient>
   </defs>
-
-  <!-- Icon -->
-  <circle cx="62" cy="60" r="38" stroke="url(#g)" stroke-width="8"/>
-  <path d="M62 36 C48 50, 48 66, 62 84 C76 66, 76 50, 62 36Z" fill="url(#g)" opacity="0.9"/>
-  <path d="M62 46 C56 54, 56 64, 62 74 C68 64, 68 54, 62 46Z" fill="#ffffff" opacity="0.65"/>
-
-  <!-- Wordmark -->
-  <text x="120" y="62" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800" fill="#0F172A">
-    Lavena Cleaning
-  </text>
-  <text x="120" y="92" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#475569">
-    Specialist &amp; compliant cleaning
-  </text>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(-40.663266,-82.337789)">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text12"
+       style="font-size:37.3333px;line-height:0;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect12);display:inline;opacity:1;fill:#132a5e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:16.493;stroke-dasharray:none;stroke-opacity:1"><tspan
+         x="453"
+         y="379.72699"
+         id="tspan25"><tspan
+           style="font-weight:bold;font-family:montserrat;-inkscape-font-specification:'montserrat Bold'"
+           id="tspan12">
+</tspan></tspan><tspan
+         x="453"
+         y="379.72699"
+         id="tspan28"><tspan
+           style="font-weight:bold;font-family:montserrat;-inkscape-font-specification:'montserrat Bold'"
+           id="tspan27">
+</tspan></tspan><tspan
+         x="453"
+         y="379.72699"
+         id="tspan30"><tspan
+           style="font-weight:bold;font-family:montserrat;-inkscape-font-specification:'montserrat Bold'"
+           id="tspan29">
+</tspan></tspan><tspan
+         x="453"
+         y="379.72699"
+         id="tspan32"><tspan
+           style="font-weight:bold;font-family:montserrat;-inkscape-font-specification:'montserrat Bold'"
+           id="tspan31">
+</tspan></tspan><tspan
+         x="453"
+         y="379.72699"
+         id="tspan34"><tspan
+           style="font-weight:bold;font-family:montserrat;-inkscape-font-specification:'montserrat Bold'"
+           id="tspan33">
+</tspan></tspan><tspan
+         x="453"
+         y="379.72699"
+         id="tspan39"><tspan
+           style="font-weight:bold;font-family:montserrat;-inkscape-font-specification:'montserrat Bold'"
+           id="tspan38">
+</tspan></tspan><tspan
+         x="453"
+         y="379.72699"
+         id="tspan41"><tspan
+           style="font-weight:bold;font-family:montserrat;-inkscape-font-specification:'montserrat Bold'"
+           id="tspan40">
+</tspan></tspan><tspan
+         x="453"
+         y="379.72699"
+         id="tspan43"><tspan
+           style="font-weight:bold;font-family:montserrat;-inkscape-font-specification:'montserrat Bold'"
+           id="tspan42">
+</tspan></tspan><tspan
+         x="453"
+         y="379.72699"
+         id="tspan45"><tspan
+           style="font-weight:bold;font-family:montserrat;-inkscape-font-specification:'montserrat Bold'"
+           id="tspan44">
+</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;line-height:0px;font-family:montserrat;-inkscape-font-specification:'montserrat Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:0;opacity:1;fill:#132a5e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.36377;stroke-dasharray:none;stroke-opacity:1"
+       x="173.83125"
+       y="114.3"
+       id="text17"><tspan
+         id="tspan17"
+         style="stroke-width:4.36377"
+         x="173.83125"
+         y="114.3">
+</tspan><tspan
+         style="stroke-width:4.36377"
+         x="173.83125"
+         y="114.3"
+         id="tspan18">
+</tspan><tspan
+         style="stroke-width:4.36377"
+         x="173.83125"
+         y="114.3"
+         id="tspan19">
+</tspan><tspan
+         style="stroke-width:4.36377"
+         x="173.83125"
+         y="114.3"
+         id="tspan20">
+</tspan><tspan
+         style="stroke-width:4.36377"
+         x="173.83125"
+         y="114.3"
+         id="tspan21" /></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text21"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:0px;font-family:montserrat;-inkscape-font-specification:montserrat;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect21);display:inline;opacity:1;fill:#132a5e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:16.493;stroke-dasharray:none;stroke-opacity:1"><tspan
+         x="470"
+         y="389.19457"
+         id="tspan46">
+</tspan></text>
+    <g
+       id="g38">
+      <g
+         id="g11"
+         transform="translate(-14.552083,3.4395833)">
+        <ellipse
+           style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#132a5e;stroke-width:2.11667;stroke-dasharray:none;stroke-opacity:1"
+           id="path1"
+           cx="92.573685"
+           cy="115.15263"
+           rx="36.299999"
+           ry="33.868423" />
+        <path
+           id="path2"
+           style="fill:#132a5e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.45176"
+           d="m 108.81794,120.72393 c 5.77585,10.98886 -7.09547,21.65156 -15.848149,21.65156 -8.75268,0 -21.896794,-10.76096 -15.848127,-21.65156 5.174897,-9.31739 27.660286,-60.906087 15.848127,-34.263503 -4.857589,10.956375 10.673229,24.418053 15.848149,34.263503 z"
+           sodipodi:nodetypes="sssss" />
+        <path
+           id="path3"
+           style="opacity:0.6;fill:#dbdee3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.8488;stroke-dasharray:none"
+           d="m 107.3396,119.97188 c 5.46107,8.87976 -5.65465,18.59543 -13.430932,19.1163 -7.776284,0.52086 -19.776829,-7.72914 -14.729507,-17.23009 4.318202,-8.12849 22.748179,-52.767439 13.052692,-29.702112 -3.987137,9.485292 10.214857,19.860102 15.107747,27.815902 z"
+           sodipodi:nodetypes="sssss" />
+        <path
+           id="path4"
+           style="fill:#132a5e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.99633"
+           d="m 108.7827,120.67312 c 5.80408,9.51359 -5.11591,19.80353 -12.957155,20.30509 -7.841245,0.50156 -20.233267,-8.38564 -15.438528,-18.48879 4.102107,-8.64369 21.289843,-56.148817 12.23442,-31.603712 -3.723922,10.093822 10.961033,21.263732 16.161263,29.787412 z"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:type="star"
+           style="opacity:1;fill:#132a5e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.36377;stroke-dasharray:none;stroke-opacity:1"
+           id="path8"
+           inkscape:flatsided="false"
+           sodipodi:sides="4"
+           sodipodi:cx="105.25263"
+           sodipodi:cy="95.873688"
+           sodipodi:r1="9.1180077"
+           sodipodi:r2="4.5590038"
+           sodipodi:arg1="0.86630226"
+           sodipodi:arg2="1.6517004"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 111.1579,102.82106 -6.27371,-2.40328 -6.578926,1.36117 2.403276,-6.273702 -1.361171,-6.578929 6.273701,2.403277 6.57893,-1.361172 -2.40328,6.273703 z"
+           transform="matrix(-0.20252763,0.49486229,-0.3656617,-0.27933911,156.83042,64.330004)"
+           inkscape:transform-center-x="3.9478487"
+           inkscape:transform-center-y="-4.4635048" />
+        <path
+           sodipodi:type="star"
+           style="opacity:1;fill:#132a5e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.36377;stroke-dasharray:none;stroke-opacity:1"
+           id="path9"
+           inkscape:flatsided="false"
+           sodipodi:sides="4"
+           sodipodi:cx="105.25263"
+           sodipodi:cy="95.873688"
+           sodipodi:r1="9.1180077"
+           sodipodi:r2="4.5590038"
+           sodipodi:arg1="0.86630226"
+           sodipodi:arg2="1.6517004"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 111.1579,102.82106 -6.27371,-2.40328 -6.578926,1.36117 2.403276,-6.273702 -1.361171,-6.578929 6.273701,2.403277 6.57893,-1.361172 -2.40328,6.273703 z"
+           transform="matrix(-0.1458378,0.25083952,-0.23100469,-0.15379526,141.86401,87.210132)"
+           inkscape:transform-center-x="2.454154"
+           inkscape:transform-center-y="-2.4092914" />
+        <path
+           sodipodi:type="star"
+           style="opacity:1;fill:#132a5e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.36377;stroke-dasharray:none;stroke-opacity:1"
+           id="path11"
+           inkscape:flatsided="false"
+           sodipodi:sides="4"
+           sodipodi:cx="105.25263"
+           sodipodi:cy="95.873688"
+           sodipodi:r1="9.1180077"
+           sodipodi:r2="4.5590038"
+           sodipodi:arg1="0.86630226"
+           sodipodi:arg2="1.6517004"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 111.1579,102.82106 -6.27371,-2.40328 -6.578926,1.36117 2.403276,-6.273702 -1.361171,-6.578929 6.273701,2.403277 6.57893,-1.361172 -2.40328,6.273703 z"
+           transform="matrix(-0.12236765,0.18103504,-0.19382836,-0.11099659,125.11385,76.751694)"
+           inkscape:transform-center-x="2.059195"
+           inkscape:transform-center-y="-1.7388265" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;line-height:0px;font-family:montserrat;-inkscape-font-specification:montserrat;writing-mode:lr-tb;direction:ltr;opacity:1;fill:#132a5e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.36377;stroke-dasharray:none;stroke-opacity:1"
+         x="114.3"
+         y="118.00417"
+         id="text35"><tspan
+           sodipodi:role="line"
+           id="tspan35"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.9333px;font-family:montserrat;-inkscape-font-specification:'montserrat Bold';stroke-width:4.36377"
+           x="114.3"
+           y="118.00417">Lavena</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;line-height:0px;font-family:montserrat;-inkscape-font-specification:'montserrat Bold';writing-mode:lr-tb;direction:ltr;opacity:1;fill:#132a5e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.36377;stroke-dasharray:none;stroke-opacity:1"
+         x="117.475"
+         y="128.85208"
+         id="text37"><tspan
+           sodipodi:role="line"
+           id="tspan36"
+           style="font-size:9.87778px;stroke-width:4.36377"
+           x="117.475"
+           y="128.85208"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:montserrat;-inkscape-font-specification:montserrat"
+   id="tspan37">Cleaning</tspan>                        </tspan></text>
+    </g>
+  </g>
 </svg>
