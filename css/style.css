@@ -23,6 +23,7 @@
     --radius-sm: 12px;
     --container: 1180px;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -62,23 +63,6 @@ a:hover {
     color: #c8f1ff;
 }
 
-input,
-textarea {
-    width: 100%;
-    padding: 13px 14px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    background: rgba(255, 255, 255, 0.04);
-    font: inherit;
-    color: var(--white);
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-input::placeholder,
-textarea::placeholder {
-    color: rgba(255, 255, 255, 0.45);
-}
-
 .container {
     width: min(var(--container), calc(100% - 32px));
     margin: 0 auto;
@@ -88,9 +72,10 @@ textarea::placeholder {
 .site-header {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     background: rgba(8, 24, 48, 0.92);
     -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -109,23 +94,26 @@ textarea::placeholder {
     gap: 10px;
     padding: 0;
     background: none;
+    min-width: 0;
 }
 
 .brand img {
-    height: 80px;
+    height: 60px;
     width: auto;
-    filter: brightness(3.2) contrast(1.2);
-   
+    max-width: 100%;
+    filter: brightness(2.2) contrast(1.2) drop-shadow(0 0 8px rgba(0, 180, 255, 0.45));
 }
 
 @media (min-width: 1024px) {
     .brand img {
-        width: 200px;
+        height: 64px;
+        width: auto;
     }
 }
 
 .site-nav {
     position: relative;
+    z-index: 1001;
 }
 
 .nav-links {
@@ -135,6 +123,10 @@ textarea::placeholder {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.nav-links li {
+    list-style: none;
 }
 
 .nav-links a {
@@ -183,6 +175,16 @@ textarea::placeholder {
     border-radius: 4px;
 }
 
+/* Layer safety */
+.hero,
+.hero-card,
+.page-header,
+.section,
+.card {
+    position: relative;
+    z-index: 1;
+}
+
 /* Hero */
 .hero {
     padding: 0;
@@ -201,6 +203,7 @@ textarea::placeholder {
         url("/assets/hero-cleaning.jpg") center right / cover no-repeat;
     color: var(--white);
     padding: 70px 56px 120px;
+    animation: heroFadeUp 0.9s ease both;
 }
 
 .hero-card::after {
@@ -216,6 +219,49 @@ textarea::placeholder {
     position: relative;
     z-index: 2;
     max-width: 610px;
+}
+
+.hero-content>* {
+    opacity: 0;
+    transform: translateY(18px);
+    animation: heroItemUp 0.7s ease forwards;
+}
+
+.hero-content .small {
+    animation-delay: 0.12s;
+}
+
+.hero-content h1 {
+    animation-delay: 0.22s;
+}
+
+.hero-content p {
+    animation-delay: 0.34s;
+}
+
+.hero-actions {
+    margin-top: 28px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(18px);
+    animation: heroItemUp 0.7s ease forwards;
+    animation-delay: 0.46s;
+}
+
+.hero-highlights {
+    position: absolute;
+    left: 56px;
+    right: 56px;
+    bottom: 24px;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    opacity: 0;
+    transform: translateY(18px);
+    animation: heroItemUp 0.8s ease 0.58s forwards;
 }
 
 .hero h1 {
@@ -241,48 +287,6 @@ textarea::placeholder {
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-}
-
-.hero-actions {
-    margin-top: 28px;
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-}
-
-.hero-card {
-    animation: heroFadeUp 0.9s ease both;
-}
-
-.hero-content>* {
-    opacity: 0;
-    transform: translateY(18px);
-    animation: heroItemUp 0.7s ease forwards;
-}
-
-.hero-content .small {
-    animation-delay: 0.12s;
-}
-
-.hero-content h1 {
-    animation-delay: 0.22s;
-}
-
-.hero-content p {
-    animation-delay: 0.34s;
-}
-
-.hero-actions {
-    animation-delay: 0.46s;
-    opacity: 0;
-    transform: translateY(18px);
-    animation: heroItemUp 0.7s ease forwards;
-}
-
-.hero-highlights {
-    animation: heroItemUp 0.8s ease 0.58s forwards;
-    opacity: 0;
-    transform: translateY(18px);
 }
 
 @keyframes heroFadeUp {
@@ -338,17 +342,6 @@ textarea::placeholder {
 }
 
 /* Hero feature boxes */
-.hero-highlights {
-    position: absolute;
-    left: 56px;
-    right: 56px;
-    bottom: 24px;
-    z-index: 3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-}
-
 .highlight-box {
     display: flex;
     align-items: center;
@@ -487,11 +480,16 @@ textarea {
     width: 100%;
     padding: 13px 14px;
     border-radius: 12px;
-    border: 1px solid rgba(15, 23, 42, 0.10);
-    background: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.04);
     font: inherit;
-    color: var(--text);
+    color: var(--white);
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.45);
 }
 
 input:focus,
@@ -536,7 +534,7 @@ button:hover {
     padding: 12px 16px;
     border-radius: 10px;
     background: rgba(20, 140, 120, 0.12);
-    color: #0f5c52;
+    color: #9ff1df;
     font-size: 14px;
     border: 1px solid rgba(20, 140, 120, 0.25);
 }
@@ -581,116 +579,6 @@ button:hover {
     margin-bottom: 0;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .hero-card {
-        min-height: 560px;
-        padding: 56px 34px 120px;
-        background-position: 68% center;
-    }
-
-    .hero-highlights {
-        left: 34px;
-        right: 34px;
-    }
-}
-
-@media (max-width: 900px) {
-
-    .grid-3,
-    .hero-highlights {
-        grid-template-columns: 1fr !important;
-    }
-
-    .hero-card {
-        min-height: auto;
-        padding: 42px 24px 24px;
-        background:
-            linear-gradient(180deg, rgba(6, 23, 48, 0.92) 0%, rgba(10, 40, 78, 0.82) 60%, rgba(10, 40, 78, 0.72) 100%),
-            url("/assets/hero-cleaning.jpg") center / cover no-repeat;
-    }
-
-    .hero-content {
-        max-width: 100%;
-    }
-
-    .hero-highlights {
-        position: static;
-        margin-top: 24px;
-    }
-
-    .cert-logos img {
-        height: 44px;
-    }
-}
-
-@media (max-width: 768px) {
-    .header-inner {
-        min-height: 72px;
-        padding: 10px 0;
-    }
-
-    .brand img {
-        width: 145px;
-    }
-
-    .nav-toggle {
-        display: inline-block;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        right: 0;
-        top: 54px;
-        flex-direction: column;
-        align-items: stretch;
-        width: 235px;
-        background: #0d2343;
-        border: 1px solid rgba(255, 255, 255, 0.10);
-        border-radius: 14px;
-        padding: 10px;
-        box-shadow: var(--shadow);
-    }
-
-    .nav-links.open {
-        display: flex;
-    }
-
-    .nav-links a {
-        color: var(--white);
-        padding: 10px 12px;
-    }
-
-    .nav-cta {
-        text-align: center;
-    }
-
-    .section {
-        padding: 34px 0;
-    }
-
-    .page-header {
-        padding-top: 18px;
-    }
-
-    .card {
-        padding: 20px;
-    }
-
-    .hero h1 {
-        font-size: 34px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .form-actions button {
-        width: 100%;
-    }
-}
-
 .service-title {
     display: flex;
     align-items: flex-start;
@@ -725,10 +613,252 @@ button:hover {
     opacity: 1;
     transform: translateY(0);
 }
+
 .contact-layout {
     align-items: stretch;
 }
 
 .contact-layout .card {
     height: 100%;
+}
+
+.service-grid-spacing {
+    margin-top: 18px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .hero-card {
+        min-height: 560px;
+        padding: 56px 34px 120px;
+        background-position: 68% center;
+    }
+
+    .hero-highlights {
+        left: 34px;
+        right: 34px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .grid-3,
+    .hero-highlights {
+        grid-template-columns: 1fr !important;
+    }
+
+    .hero-card {
+        padding: 42px 24px 24px;
+        background:
+            linear-gradient(180deg, rgba(6, 23, 48, 0.92) 0%, rgba(10, 40, 78, 0.82) 60%, rgba(10, 40, 78, 0.72) 100%),
+            url("/assets/hero-cleaning.jpg") center / cover no-repeat;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-highlights {
+        position: static;
+        margin-top: 24px;
+    }
+
+    .cert-logos img {
+        height: 44px;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-inner {
+        min-height: 78px;
+        padding: 12px 0;
+    }
+
+    .brand {
+        background: none;
+        padding: 0;
+    }
+
+    .brand img {
+        height: 54px;
+        width: auto;
+        max-width: 180px;
+        filter: brightness(2.2) contrast(1.2) drop-shadow(0 0 8px rgba(0, 180, 255, 0.45));
+    }
+
+    .site-header {
+        z-index: 1000;
+    }
+
+    .site-nav {
+        position: relative;
+        z-index: 1001;
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1002;
+        width: 58px;
+        height: 58px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        width: 220px;
+        flex-direction: column;
+        gap: 6px;
+        padding: 12px;
+        background: rgba(10, 30, 58, 0.98);
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        border-radius: 16px;
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+        z-index: 2000;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 10px;
+        color: #fff;
+        text-align: left;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-cta {
+        text-align: center;
+    }
+
+    .hero {
+        padding: 0;
+    }
+
+    .hero-card {
+        min-height: auto;
+        padding: 26px 18px 22px;
+        border-radius: 0 0 22px 22px;
+        background:
+            linear-gradient(180deg, rgba(6, 23, 48, 0.94) 0%, rgba(10, 40, 78, 0.84) 55%, rgba(10, 40, 78, 0.76) 100%),
+            url("/assets/hero-cleaning.jpg") center / cover no-repeat;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero .small {
+        font-size: 11px;
+        line-height: 1.5;
+        letter-spacing: 0.08em;
+        margin-bottom: 12px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        line-height: 1.05;
+        margin-bottom: 14px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 100%;
+    }
+
+    .hero-actions {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-highlights {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .highlight-box {
+        min-height: auto;
+        padding: 14px 14px;
+        gap: 10px;
+    }
+
+    .highlight-box span {
+        font-size: 14px;
+        line-height: 1.35;
+    }
+
+    .highlight-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr !important;
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    .page-header {
+        padding-top: 18px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .cert-logos {
+        gap: 16px;
+    }
+
+    .cert-logos img {
+        height: 42px;
+        max-width: 120px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
 }
