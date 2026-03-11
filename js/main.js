@@ -5,6 +5,7 @@ if (navToggle && navLinks) {
   navToggle.addEventListener("click", (e) => {
     e.stopPropagation();
     navLinks.classList.toggle("open");
+    navToggle.classList.toggle("open");
     const expanded = navLinks.classList.contains("open");
     navToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
   });

@@ -167,12 +167,23 @@ a:hover {
 }
 
 .nav-toggle span {
-    display: block;
-    width: 24px;
+    width: 22px;
     height: 2px;
-    background: var(--white);
-    margin: 4px auto;
-    border-radius: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.nav-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Layer safety */
@@ -700,19 +711,22 @@ button:hover {
     }
 
     .nav-toggle {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        z-index: 1002;
-        width: 48px;
-        height: 48px;
-        border-radius: 14px;
-        border: 1px solid rgba(255, 255, 255, 0.14);
-        background: rgba(255, 255, 255, 0.04);
+        display: none;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.06);
         -webkit-backdrop-filter: blur(6px);
         backdrop-filter: blur(6px);
         
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+
+        cursor: pointer;
     }
 
     .nav-links {
@@ -872,5 +886,26 @@ button:hover {
 
     .form-actions button {
         width: 100%;
+    }
+}
+/* Map */
+.map-embed {
+    margin-top: 18px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: var(--shadow-soft);
+}
+
+.map-embed iframe {
+    display: block;
+    width: 100%;
+    height: 360px;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .map-embed iframe {
+        height: 300px;
     }
 }
